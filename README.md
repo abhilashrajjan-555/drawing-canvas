@@ -2,6 +2,8 @@
 
 A browser-based sketch pad that showcases HTML `<canvas>` drawing, multiple tools, undo/redo, and persistence. It is a lightweight playground for experimenting with pointer handling and Canvas API styling.
 
+**Live demo:** https://abhilashrajjan-555.github.io/drawing-canvas/
+
 ## Features
 - **Freehand, line, and rectangle tools** with optional filled shapes and adjustable brush sizes.
 - **Color system** containing preset swatches, a custom color picker, and brush opacity slider.
