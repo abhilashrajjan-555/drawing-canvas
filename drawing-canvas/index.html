@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Simple Drawing Canvas</title>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <main class="app">
+      <header>
+        <h1>Simple Drawing Canvas</h1>
+        <p>Pick a color, choose a brush, and start sketching.</p>
+      </header>
+      <section class="controls" aria-label="Drawing controls">
+        <div class="control-group" aria-label="Color palette">
+          <span class="group-label">Colors</span>
+          <button class="swatch active" data-color="#111827" aria-label="Black"></button>
+          <button class="swatch" data-color="#e11d48" aria-label="Pink"></button>
+          <button class="swatch" data-color="#f97316" aria-label="Orange"></button>
+          <button class="swatch" data-color="#22c55e" aria-label="Green"></button>
+          <button class="swatch" data-color="#0ea5e9" aria-label="Blue"></button>
+          <button class="swatch" data-color="#a855f7" aria-label="Purple"></button>
+        </div>
+        <div class="control-group custom-color" aria-label="Custom color">
+          <label for="customColor">Custom</label>
+          <input type="color" id="customColor" value="#111827" />
+          <label for="opacityControl" class="opacity-label">Opacity <span id="opacityValue">100%</span></label>
+          <input type="range" id="opacityControl" min="0.1" max="1" step="0.05" value="1" />
+        </div>
+        <div class="control-group" aria-label="Brush size">
+          <span class="group-label">Brush</span>
+          <button class="size-btn active" data-size="5">5px</button>
+          <button class="size-btn" data-size="10">10px</button>
+          <button class="size-btn" data-size="15">15px</button>
+        </div>
+        <div class="control-group" aria-label="Drawing tool">
+          <span class="group-label">Tool</span>
+          <button class="tool-btn active" data-tool="freehand">Freehand</button>
+          <button class="tool-btn" data-tool="line">Line</button>
+          <button class="tool-btn" data-tool="rectangle">Rectangle</button>
+          <label class="toggle" for="fillToggle">
+            <input type="checkbox" id="fillToggle" />
+            <span>Fill shapes</span>
+          </label>
+        </div>
+        <div class="control-group actions">
+          <button id="fillCanvas" class="ghost">Fill Canvas</button>
+          <button id="clearCanvas" class="ghost">Clear</button>
+          <button id="undoCanvas" class="ghost">Undo</button>
+          <button id="redoCanvas" class="ghost">Redo</button>
+          <button id="downloadCanvas">Download PNG</button>
+        </div>
+      </section>
+      <section class="canvas-wrapper">
+        <canvas id="drawingCanvas" width="960" height="540" aria-label="Drawing area"></canvas>
+      </section>
+    </main>
+    <script src="scripts/app.js"></script>
+  </body>
+</html>
