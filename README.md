@@ -41,9 +41,9 @@ A browser-based sketch pad that showcases HTML `<canvas>` drawing, multiple tool
 | `C`                   | Clear canvas|
 
 ## Deploying to GitHub Pages
-1. Push the `main` branch (see below) so GitHub has the latest code.
-2. In the GitHub repo, open **Settings → Pages**.
+1. Push the `main` branch (done if you're seeing this on GitHub) so the latest code is online.
+2. In the GitHub repo (`abhilashrajjan-555/drawing-canvas`), open **Settings → Pages**.
 3. Under **Build and deployment**, choose **Branch: `main`** and **Folder: `/ (root)`**, then save.
-4. GitHub will publish the site at `https://abhilashrajjan-555.github.io/lightweight-kanban/`. The root `index.html` automatically redirects to `/drawing-canvas/`, so you can share the base URL or the deeper `drawing-canvas` path directly.
+4. GitHub will publish the site at `https://abhilashrajjan-555.github.io/drawing-canvas/`. The root `index.html` automatically redirects to `/drawing-canvas/`, so visitors can use either the base URL or the deeper path directly.
 
-After Pages finishes building, share the published URL with anyone to try the drawing tool.
+Once Pages finishes building, share the published URL with anyone to try the drawing tool.
