@@ -2,6 +2,8 @@
 
 Minimal, dependency-free Kanban board built with semantic HTML, vanilla CSS, and JavaScript modules. It ships with Backlog / In Progress / Done columns, drag-and-drop, card editing, and localStorage persistence so the board feels instant but keeps its state between visits.
 
+**Live demo:** https://abhilashrajjan-555.github.io/lightweight-kanban/
+
 ## Features
 
 - **Zero build tooling** – open `index.html` directly or host via any static server.
